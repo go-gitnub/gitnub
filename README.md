@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="app/assets/images/logo-white.svg" height="200px">
+  <img src="app/assets/images/logo.svg" height="150px">
 
   <h2>GitHub, but 2010</h2>
 

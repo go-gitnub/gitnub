@@ -1,0 +1,32 @@
+require: rubocop-rails
+
+AllCops:
+  NewCops: enable
+
+Layout/LineLength:
+  Exclude:
+    - config/initializers/devise.rb
+
+Metrics/AbcSize:
+  Exclude:
+    - db/migrate/*.rb
+
+Metrics/BlockLength:
+  Exclude:
+    - db/migrate/*.rb
+    - lib/tasks/**/*.rake
+
+Metrics/MethodLength:
+  Exclude:
+    - db/migrate/*.rb
+
+# I can't be assed to write documentation for these
+# right now, so they're going to be disabled.
+
+Style/Documentation:
+  Exclude:
+    - app/controllers/**/*.rb
+    - app/helpers/**/*.rb
+    - app/models/application_record.rb
+    - config/application.rb
+    - db/migrate/*.rb

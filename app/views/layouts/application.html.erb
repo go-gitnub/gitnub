@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="<%= I18n.locale %>">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <title>GitNub</title>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload', integrity: true %>
+    <%= javascript_include_tag 'application', defer: true, 'data-turbolinks-track': 'reload', integrity: true %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

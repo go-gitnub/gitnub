@@ -1,0 +1,22 @@
+<div class="auth-form" id="login">
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="auth-form-header">
+      <h1>Log in to GitNub</h1>
+    </div>
+    <div class="auth-form-body">
+      <label for="login_field">
+        Username or email address
+      </label>
+      <% opts = { class: 'input-block', id: 'login_field', tabindex: 1, autocapitalize: 'off', autofocus: true } %>
+      <%= f.text_field :login, opts %>
+
+      <label for="password">
+        Password <%= link_to '(forgot password)', new_password_path(resource_name) %>
+      </label>
+      <% opts = { class: 'input-block', tabindex: 2, autofocus: true } %>
+      <%= f.password_field :password, opts %>
+
+      <%= f.submit 'Sign in', class: 'button', tabindex: 3 %>
+    </div>
+  <% end %>
+</div>
